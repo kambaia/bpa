@@ -17,7 +17,7 @@ const company = {
 };
 function App() {
   const [currentImage, setCurrentImage] = useState(0);
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const images = [
     "/assets/bg-main-001.jpg",
