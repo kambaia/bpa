@@ -1,0 +1,38 @@
+.arrow-left {
+    /* personalize aqui */
+    --w: 70px;
+    /* largura total da seta */
+    --h: 8px;
+    /* espessura da haste */
+    --c1: #43a047;
+    /* verde */
+    --c2: #cddc39;
+    /* amarelo-lima */
+
+    position: relative;
+    width: var(--w);
+    height: var(--h);
+    background: linear-gradient(90deg, var(--c1), var(--c2));
+    border-radius: 999px;
+    /* haste arredondada */
+}
+
+/* ponta da seta (esquerda) */
+.arrow-left::before {
+    content: "";
+    position: absolute;
+    left: calc(var(--h) * -1.2);
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(var(--h) * 1.7);
+    height: calc(var(--h) * 1.7);
+    background: linear-gradient(135deg, var(--c1), var(--c2));
+    /* triângulo apontando para a esquerda */
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    border-radius: 2px;
+}
+
+/* opcional: efeito hover suave */
+.arrow-left:hover {
+    filter: brightness(1.05);
+}
