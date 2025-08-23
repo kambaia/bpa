@@ -84,7 +84,7 @@ function App() {
           <div className="bg-white/10 p-4 rounded-2xl flex flex-row items-center shadow-md hover:bg-white/20 hover:scale-105 transition cursor-pointer">
             <img src="/assets/7.png" alt="Empresa 4" className="w-20 h-20 mr-4" />
             <div>
-              <h2 className="text-2xl font-semibold text-white">OMNIBOX STORE</h2>
+              <h2 className="text-2xl font-semibold text-white">CYBER WORLD</h2>
               <p className="text-gray-200">Cyber café com foco em impressão e jogos</p>
             </div>
           </div>
