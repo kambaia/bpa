@@ -3,19 +3,19 @@ import { motion, AnimatePresence } from "framer-motion";
 import { LayoutGrid } from 'lucide-react'
 const slogans = [
     <>
-        <span className="text-[#732CFF]">  Servimos</span> <span className="font-semibold text-gray-200">pessoas</span>,<br />
+        <span className="text-[#732CFF]">  Servimos</span> <span className="font-semibold text-gray-200">pessoas,</span><br />
         <span className="text-[#732CFF]">mudamos</span><span className="font-semibold text-gray-200">negócios.</span>
     </>,
     <>
-        <span className="text-[#732CFF]">Transformamos</span> <span className="font-semibold text-gray-200">ideias</span>,<br />
+        <span className="text-[#732CFF]">Transformamos</span> <span className="font-semibold text-gray-200">ideias,</span><br />
         <span className="text-[#732CFF]"> criamos </span><span className="font-semibold text-gray-200">futuro.</span>
     </>,
     <>
-        <span className="text-[#732CFF]">Valorizamos</span> <span className="font-semibold text-gray-200">talentos</span>,<br />
+        <span className="text-[#732CFF]">Valorizamos</span> <span className="font-semibold text-gray-200">talentos,</span><br />
         <span className="text-[#732CFF]"> geramos </span> <span className="font-semibold text-gray-200">resultados.</span>
     </>,
     <>
-        <span className="text-[#732CFF]"> Conectamos</span>  <span className="font-semibold text-gray-200">tecnologia</span>,<br />
+        <span className="text-[#732CFF]"> Conectamos</span>  <span className="font-semibold text-gray-200">tecnologia,</span><br />
         <span className="text-[#732CFF]">  potenciamos</span> <span className="font-semibold text-gray-200">negócios.</span>
     </>,
 ];
@@ -62,9 +62,6 @@ export default function HeroSection({ currentImage, setShowGridModal }: { curren
             <div className="flex flex-col gap-4 w-full max-w-sm">
                 <button className="w-full border border-white text-white py-3 rounded-md font-semibold hover:bg-white/10 transition">
                     Contactos
-                </button>
-                <button className="w-full border border-white text-white py-3 rounded-md font-semibold hover:bg-white/10 transition">
-                    Descubra mais sobre o Sendys Group
                 </button>
                 <button className="w-full bg-white text-black py-3 rounded-md font-semibold hover:bg-gray-200 transition">
                     RECRUTAMENTO
