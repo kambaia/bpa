@@ -1,7 +1,6 @@
 // import { Button } from "@/components/ui/button"; // se usares shadcn, senão troca por <button>
 import { motion, AnimatePresence } from "framer-motion";
 import { LayoutGrid } from 'lucide-react'
-import { useState } from "react";
 const slogans = [
     <>
         <span className="text-[#732CFF]">  Servimos</span> <span className="font-semibold text-gray-200">pessoas</span>,<br />
