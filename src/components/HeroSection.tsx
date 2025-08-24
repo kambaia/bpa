@@ -1,5 +1,7 @@
 // import { Button } from "@/components/ui/button"; // se usares shadcn, senão troca por <button>
 import { motion, AnimatePresence } from "framer-motion";
+import { LayoutGrid } from 'lucide-react'
+import { useState } from "react";
 const slogans = [
     <>
         <span className="text-[#732CFF]">  Servimos</span> <span className="font-semibold text-gray-200">pessoas</span>,<br />
@@ -19,11 +21,23 @@ const slogans = [
     </>,
 ];
 
-export default function HeroSection({ currentImage }: { currentImage?: number }) {
+export default function HeroSection({ currentImage, setShowGridModal }: { currentImage?: number, setShowGridModal: (show: boolean) => void }) {
+
     return (
         <section className="relative min-h-screen w-full flex flex-col items-center justify-center text-center px-6 bg-gradient-to-b from-black/50 to-black/70">
             {/* Logo */}
-            <img src={"/assets/logo-main.png"} alt="SENDYS GROUP" className="w-130 mb-8" />
+            <div className="flex flex-row gap-10 items-center justify-space-between mb-6 py-8">
+                <img src={"/assets/logo-main.png"} alt="SENDYS GROUP" className="absolute left-5 w-64 md:w-90  mb-8" />
+                <motion.div
+                    className="absolute mb-10 right-6 top-4 text-white md:hidden"
+                    animate={{ scale: [1, 1.2, 1] }}
+                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                    onClick={() => setShowGridModal(true)}
+                >
+                    <LayoutGrid size={30} />
+
+                </motion.div>
+            </div>
 
 
             <div className="relative h-24 flex items-center justify-center overflow-hidden">

@@ -36,18 +36,30 @@ export function CompanyModal({ isOpen, onClose, company }: CompanyModalProps) {
                     >
                         {/* Coluna da Imagem */}
                         <div className="relative h-full w-full">
-                            <img
-                                src={company.image}
-                                alt={company.name}
-                                className="h-full w-full object-cover"
-                            />
-                            <div className="absolute inset-0 bg-732CFF/70 mix-blend-multiply" />
+                            {/* Mobile: imagem como background fixo */}
+                            <div
+                                className="absolute inset-0 w-full h-full bg-center bg-cover bg-no-repeat"
+                                style={{
+                                    backgroundImage: `url(${company.image})`,
+                                    backgroundAttachment: 'fixed',
+                                }}
+                            >
+                                <div className="absolute inset-0 bg-[#732CFF]/30 mix-blend-multiply" />
+                            </div>
+                            {/* Seta sobreposta no topo esquerdo */}
+                            <button
+                                onClick={onClose}
+                                className="absolute top-4 left-4 z-10 bg-white/80 rounded-full p-2 shadow-md md:hidden"
+                                aria-label="Fechar"
+                            >
+                                <ArrowLeft className="w-8 h-8 text-[#732CFF]" />
+                            </button>
                         </div>
 
                         {/* Coluna do Conteúdo */}
                         <div className="p-8 overflow-y-auto">
                             {/* Logo */}
-                            <div className="flex justify-end mb-4">
+                            <div className="md:flex justify-end mb-4 hidden">
                                 <button
                                     onClick={onClose}
                                     className="text-gray-600 hover:text-black cursor-pointer"
