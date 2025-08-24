@@ -5,13 +5,14 @@ interface CompanyModalProps {
     isOpen: boolean;
     onClose: () => void;
     company: {
+        id: number;
         name: string;
         logo: string;
+        subtitle: string;
         image: string;
         website: string;
         slogan: string;
         description: any;
-        highlight: string;
     };
 }
 
@@ -83,7 +84,7 @@ export function CompanyModal({ isOpen, onClose, company }: CompanyModalProps) {
                             </p>
 
                             {/* Destaque */}
-                            <p className="font-semibold  text-[#732CFF]">{company.highlight}</p>
+                            <p className="font-semibold  text-[#732CFF]">{company.subtitle}</p>
                         </div>
                     </motion.div>
                 </motion.div>
