@@ -36,7 +36,6 @@ export function CompanyModal({ isOpen, onClose, company }: CompanyModalProps) {
                     >
                         {/* Coluna da Imagem */}
                         <div className="relative h-full w-full">
-                            {/* Mobile: imagem como background fixo */}
                             <div
                                 className="absolute inset-0 w-full h-full bg-center bg-cover bg-no-repeat"
                                 style={{

@@ -60,12 +60,12 @@ export default function HeroSection({ currentImage, setShowGridModal }: { curren
 
             {/* Botões */}
             <div className="flex flex-col gap-4 w-full max-w-sm">
-                <button className="w-full border border-white text-white py-3 rounded-md font-semibold hover:bg-white/10 transition">
+                <a href="/contact" className="w-full border border-white text-white py-3 rounded-md font-semibold hover:bg-white/10 transition">
                     Contactos
-                </button>
-                <button className="w-full bg-white text-black py-3 rounded-md font-semibold hover:bg-gray-200 transition">
+                </a>
+                <a href="/recrutament" className="w-full bg-white text-black py-3 rounded-md font-semibold hover:bg-gray-200 transition">
                     RECRUTAMENTO
-                </button>
+                </a>
             </div>
 
             {/* Rodapé */}
