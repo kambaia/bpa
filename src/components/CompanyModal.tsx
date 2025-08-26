@@ -48,7 +48,7 @@ export function CompanyModal({ isOpen, onClose, company }: CompanyModalProps) {
                             {/* Seta sobreposta no topo esquerdo */}
                             <button
                                 onClick={onClose}
-                                className="absolute top-4 left-4 z-10 bg-white/80 rounded-full p-2 shadow-md md:hidden"
+                                className="absolute top-10 left-4 z-10 bg-white/80 rounded-full p-2 shadow-md md:hidden"
                                 aria-label="Fechar"
                             >
                                 <ArrowLeft className="w-8 h-8 text-[#732CFF]" />
