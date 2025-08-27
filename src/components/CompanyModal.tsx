@@ -37,7 +37,7 @@ export function CompanyModal({ isOpen, onClose, company }: CompanyModalProps) {
                         {/* Coluna da Imagem */}
                         <div className="relative h-full w-full">
                             <div
-                                className="absolute inset-0 w-full h-[200px] bg-center bg-cover bg-no-repeat"
+                                className="absolute inset-0 w-full h-[200px] md:h-[100vh]  bg-center bg-cover bg-no-repeat"
                                 style={{
                                     backgroundImage: `url(${company.image})`,
                                     backgroundAttachment: 'fixed',
