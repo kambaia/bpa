@@ -46,7 +46,7 @@ export default function RecrutamentPage() {
 
             <main className="flex flex-col md:flex-row gap-10 md:px-40 py-20 bg-gradient-to-r from-[#1a1333] via-[#732CFF] to-[#1a1333] mt-auto">
                 {/* Formulário de Recrutamento */}
-                <section className="bg-gradient-to-br from-[#1a1333] via-[#732CFF]/60 to-[#1a1333] p-8 rounded-lg flex-1 mb-8 md:mb-0 shadow-lg">
+                <section className="p-8 rounded-lg flex-1 mb-8 md:mb-0 shadow-lg">
                     <h2 className="text-2xl font-bold mb-6 text-white">Candidate-se à nossa equipa</h2>
                     <form className="flex flex-col gap-4">
                         <input
@@ -118,21 +118,21 @@ export default function RecrutamentPage() {
                 </section>
 
                 {/* Informações de Recrutamento */}
-                <section className="flex-1 bg-gradient-to-br from-[#1a1333] via-[#732CFF]/40 to-[#1a1333] rounded-lg p-8 shadow-lg">
+                <section className="flex-1 rounded-lg px-8 py-4 md:p-8 shadow-lg">
                     <p className="mb-6 text-gray-300">
                         Procuramos talentos que queiram crescer connosco. Se tem vontade de aprender, espírito de equipa e paixão por inovação, envie-nos a sua candidatura. Valorizamos diversidade, dedicação e criatividade.
                     </p>
                     <div className="mb-6">
                         <div className="flex items-center gap-2 mb-2">
-                            <span className="font-bold text-[#732CFF]">Email para recrutamento:</span>
+                            <span className="font-bold">Email para recrutamento:</span>
                             <span className="text-gray-200">recrutamento@bpa.com</span>
                         </div>
                         <div className="flex items-center gap-2 mb-2">
-                            <span className="font-bold text-[#732CFF]">Telefone:</span>
+                            <span className="font-bold">Telefone:</span>
                             <span className="text-gray-200">+244 934 001 880</span>
                         </div>
                         <div className="flex items-center gap-2 mb-2">
-                            <span className="font-bold text-[#732CFF]">Morada:</span>
+                            <span className="font-bold">Morada:</span>
                             <span className="text-gray-200">Angola, Benfica, Dona Xepa</span>
                         </div>
                     </div>
@@ -142,7 +142,7 @@ export default function RecrutamentPage() {
             {/* Rodapé */}
             <footer className="bg-gradient-to-r from-[#1a1333] via-[#732CFF] to-[#1a1333] py-8 px-8 mt-auto">
                 <div className="flex flex-col md:flex-row justify-between items-center max-w-5xl mx-auto">
-                    <div className="mb-4 md:mb-0 flex flex-col items-center">
+                    <div className="mb-4 md:mb-0 flex flex-col items-center text-center">
                         <img
                             src="/assets/logo-main.png"
                             alt="Logo"
@@ -151,26 +151,6 @@ export default function RecrutamentPage() {
                         <p className="text-gray-200 text-xs">
                             Copyright © 2025 BPA GROUP | Desenvolvido por BPA GROUP
                         </p>
-                    </div>
-                    <div className="flex flex-col md:flex-row gap-8 text-sm">
-                        <div>
-                            <h3 className="font-bold mb-2 text-white">A Nossa Loja</h3>
-                            <ul className="space-y-1 text-gray-200">
-                                <li>Início</li>
-                                <li>Sobre</li>
-                                <li>Serviços</li>
-                                <li>Contactos</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 className="font-bold mb-2 text-white">Contactos</h3>
-                            <ul className="space-y-1 text-gray-200">
-                                <li>2443 Oak Ridge Omaha, QA 45065</li>
-                                <li>207-8767-452</li>
-                                <li>082-245-7253</li>
-                                <li>suporte@site.com</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </footer>

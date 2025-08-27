@@ -68,8 +68,8 @@ export default function ContactPage() {
       {/* Conteúdo Principal */}
       <main className="flex flex-col md:flex-row gap-10 md:px-40 py-20 bg-gradient-to-r from-[#1a1333] via-[#732CFF] to-[#1a1333] mt-auto">
         {/* Formulário de Contacto */}
-        <section className="bg-gradient-to-br from-[#1a1333] via-[#732CFF]/60 to-[#1a1333] p-8 rounded-lg flex-1 mb-8 md:mb-0 shadow-lg">
-          <h2 className="text-2xl font-bold mb-6 text-white">Fale Connosco</h2>
+        <section className=" p-8 rounded-lg flex-1 mb-2 md:mb-0 shadow-lg">
+          <h2 className="text-2xl font-bold mb-2 text-white">Fale Connosco</h2>
           <form className="flex flex-col gap-4">
             <input
               type="text"
@@ -101,25 +101,25 @@ export default function ContactPage() {
         </section>
 
         {/* Informações de Contacto */}
-        <section className="flex-1 bg-gradient-to-br from-[#1a1333] via-[#732CFF]/40 to-[#1a1333] rounded-lg p-8 shadow-lg">
-          <p className="mb-6 text-gray-300">
+        <section className="flex-1 rounded-lg p-6 md:p-8 shadow-lg">
+          <p className="md:mb-6  text-gray-300">
             Em tempos de mudança, estamos sempre prontos para ajudar. Entre em contacto connosco para esclarecer dúvidas, pedir informações ou agendar uma reunião. A nossa equipa está disponível para o apoiar.
           </p>
           <div className="mb-6">
             <div className="flex items-center gap-2 mb-2">
-              <span className="font-bold text-[#732CFF]">Telefone:</span>
+              <span className="font-bold ">Telefone:</span>
               <span className="text-gray-200">+244 934 001 880/+244 922 858 762/+244 944 969 865</span>
             </div>
             <div className="flex items-center gap-2 mb-2">
-              <span className="font-bold text-[#732CFF]">Email:</span>
+              <span className="font-bold ">Email:</span>
               <span className="text-gray-200">geral@bpa.com</span>
             </div>
             <div className="flex items-center gap-2 mb-2">
-              <span className="font-bold text-[#732CFF]">Whatsapp:</span>
+              <span className="font-bold ">Whatsapp:</span>
               <span className="text-gray-200">+244 934 001 880</span>
             </div>
             <div className="flex items-center gap-2 mb-2">
-              <span className="font-bold text-[#732CFF]">Morada:</span>
+              <span className="font-bold ">Morada:</span>
               <span className="text-gray-200">Angola, Benfica, Dona Xepa</span>
             </div>
           </div>
@@ -139,7 +139,7 @@ export default function ContactPage() {
       {/* Rodapé */}
       <footer className="bg-gradient-to-r from-[#1a1333] via-[#732CFF] to-[#1a1333] py-8 px-8 mt-auto">
         <div className="flex flex-col md:flex-row justify-center items-center max-w-5xl mx-auto">
-          <div className="mb-4 md:mb-0 flex flex-col items-center">
+          <div className="mb-4 md:mb-0 flex flex-col items-center text-center">
             <img
               src="/assets/logo-main.png"
               alt="Logo"
