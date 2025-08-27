@@ -60,7 +60,7 @@ export default function ContactPage() {
         <div className="relative z-10 text-center">
           <h1 className="text-3xl md:text-6xl font-bold mb-4 text-white">Contactos</h1>
           <nav className="text-gray-300 text-lg">
-            Início / <span className="text-white font-semibold">Contactos</span>
+            <a href="/" className="underline">Início</a> / <span className="text-white font-semibold">Contactos</span>
           </nav>
         </div>
       </header>
