@@ -45,11 +45,11 @@ export default function ContactPage() {
           className="absolute inset-0 w-full h-full"
           style={{
             transform: `translateY(${scrollY * 0.5}px)`,
-            backgroundImage: 'url(/assets/bg-main-001.jpg)',
+            backgroundImage: 'url(/assets/bg-main-004.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            zIndex: -2
+            zIndex: -2,
           }}
         />
 
@@ -58,7 +58,7 @@ export default function ContactPage() {
 
         {/* Conteúdo do header */}
         <div className="relative z-10 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">Contactos</h1>
+          <h1 className="text-3xl md:text-6xl font-bold mb-4 text-white">Contactos</h1>
           <nav className="text-gray-300 text-lg">
             Início / <span className="text-white font-semibold">Contactos</span>
           </nav>
@@ -66,7 +66,7 @@ export default function ContactPage() {
       </header>
 
       {/* Conteúdo Principal */}
-      <main className="flex flex-col md:flex-row gap-10 md:px-40 py-20 bg-gradient-to-r from-[#1a1333] via-[#732CFF] to-[#1a1333] mt-auto">
+      <main className="flex flex-col md:flex-row gap-10 md:px-40 md:py-20 bg-gradient-to-r from-[#1a1333] via-[#732CFF] to-[#1a1333] mt-auto">
         {/* Formulário de Contacto */}
         <section className=" p-8 rounded-lg flex-1 mb-2 md:mb-0 shadow-lg">
           <h2 className="text-2xl font-bold mb-2 text-white">Fale Connosco</h2>

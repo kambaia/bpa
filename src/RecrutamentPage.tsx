@@ -28,23 +28,23 @@ export default function RecrutamentPage() {
                     className="absolute inset-0 w-full h-full"
                     style={{
                         transform: `translateY(${scrollY * 0.5}px)`,
-                        backgroundImage: 'url(/assets/bg-main-001.jpg)',
+                        backgroundImage: 'url(/assets/bg-main-004.jpg)',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat',
-                        zIndex: -2
+                        zIndex: -2,
                     }}
                 />
                 <div className="absolute inset-0 z-[-1]" />
                 <div className="relative z-10 text-center">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">Recrutamento</h1>
+                    <h1 className="text-3xl md:text-6xl font-bold mb-4 text-white">Recrutamento</h1>
                     <nav className="text-gray-300 text-lg">
                         Início / <span className="text-white font-semibold">Recrutamento</span>
                     </nav>
                 </div>
             </header>
 
-            <main className="flex flex-col md:flex-row gap-10 md:px-40 py-20 bg-gradient-to-r from-[#1a1333] via-[#732CFF] to-[#1a1333] mt-auto">
+            <main className="flex flex-col md:flex-row gap-10 md:px-40 md:py-20 bg-gradient-to-r from-[#1a1333] via-[#732CFF] to-[#1a1333] mt-auto">
                 {/* Formulário de Recrutamento */}
                 <section className="p-8 rounded-lg flex-1 mb-8 md:mb-0 shadow-lg">
                     <h2 className="text-2xl font-bold mb-6 text-white">Candidate-se à nossa equipa</h2>
@@ -118,7 +118,7 @@ export default function RecrutamentPage() {
                 </section>
 
                 {/* Informações de Recrutamento */}
-                <section className="flex-1 rounded-lg px-8 py-4 md:p-8 shadow-lg">
+                <section className="flex-1 rounded-lg px-8 py-4 md:p-8 shadow-lg ">
                     <p className="mb-6 text-gray-300">
                         Procuramos talentos que queiram crescer connosco. Se tem vontade de aprender, espírito de equipa e paixão por inovação, envie-nos a sua candidatura. Valorizamos diversidade, dedicação e criatividade.
                     </p>
@@ -140,9 +140,9 @@ export default function RecrutamentPage() {
             </main>
 
             {/* Rodapé */}
-            <footer className="bg-gradient-to-r from-[#1a1333] via-[#732CFF] to-[#1a1333] py-8 px-8 mt-auto">
+            <footer className="bg-gradient-to-r from-[#1a1333] via-[#732CFF] to-[#1a1333] py-4  md:p-8 mt-auto">
                 <div className="flex flex-col md:flex-row justify-between items-center max-w-5xl mx-auto">
-                    <div className="mb-4 md:mb-0 flex flex-col items-center text-center">
+                    <div className="mb-4 md:mb-0 flex flex-col items-center text-center ">
                         <img
                             src="/assets/logo-main.png"
                             alt="Logo"
